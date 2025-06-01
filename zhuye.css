@@ -1,0 +1,432 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url(https://i.postimg.cc/3J16VbBY/55.jpg);
+    background-size: cover;
+    text-decoration: none;
+}
+
+/* ---导航系统 ---*/
+.nav {
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: center/cover;
+    border-top-right-radius: 25px;
+    transition: width 0.3s ease;
+    z-index: 100;
+    padding-bottom: 30px;
+
+}
+
+.nbox:not(:first-child) {
+    width: 60%;
+    height: 20%;
+    border-radius: 8px;
+    color: #000;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nbox-1 {
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+.nbox-1 i {
+    font-size: 35px;
+}
+
+/* 图标样式 */
+.nbox i {
+    font-size: 28px;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+    /* 给文字预留空间 */
+}
+
+/* 文字样式 */
+.nbox span {
+    font-family: "宋体";
+    opacity: 0;
+    padding-left: 0.5em;
+    font-weight: bolder;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* 悬停效果 */
+.nbox:hover span {
+    opacity: 1;
+    transform: translateX(-10%) translateY(-2px);
+}
+
+.nbox:hover {
+    opacity: 2;
+    background: #ffffff;
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 导航交互效果 */
+.nav:hover {
+    width: 110px;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
+    background-image: url(https://i.postimg.cc/tJtfXrGd/4.jpg);
+}
+
+/*---整体内容区域--- */
+
+.neiron {
+    margin-left: 45px;
+    padding: 10px;
+    transition: margin 0.3s ease;
+}
+
+/* 卡片系统 */
+
+.userbox {
+    display: grid;
+    grid-template-rows: auto min-content;/* 两行布局 */
+    height: 90vh;
+    gap: 10px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 280px 1fr;/* 保持原有宽度比例 */
+    gap: 30px; /* 用户信息与信息区的间距 */
+    align-items: start;
+}
+
+/* 左侧复合容器 */
+.user {
+    display: flex;
+    flex-direction: column; /* 改为垂直布局 */
+    width: 150%;/* 固定左侧组合宽度 */
+    gap: 20px;/* 子元素间距 */
+}
+
+  /* 左侧用户信息卡片 */
+.user>div:first-child {
+    background: #ffffff49;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+  /* 左侧头像样式 */
+.tx {
+    flex: 0 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: url('https://i.postimg.cc/pXgjjZC6/h-3.jpg') center/cover;
+    overflow: hidden;
+    border: 2px solid #ff9a9e;
+    box-shadow: 0 2px 8px rgba(255, 154, 158, 0.3);
+    transition: transform 0.3s ease;
+}
+
+  /*左侧 文字信息容器 */
+.user div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user h1 {
+    color: #2d3436;
+    font-size: 1.5em;
+    margin: 0 0 8px 0;
+    font-family: '宋体';
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user span {
+    font-size: 15px;
+    color: #ff9a9e;
+    text-shadow: #34a9d4;
+}
+
+.user h4 {
+    color: #34a9d4;
+    margin: 0;
+    padding-top: 8px;
+    font-family: "宋体";
+    position: relative;
+}
+
+.user h4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background: #eee;
+}
+
+.userinfo {
+    display: flex;
+    background-color: #ffffff49;
+    width: 100%;
+    height: 60vh;
+    border-radius: 15px;
+}
+
+.userinfo span {
+    font-size: "楷体";
+    text-align: center;
+    color: #ff9a9e;
+    font: weight 2px;
+    font-size: 25px;
+    margin-top: 15px;
+}
+/* 左侧用户头像区 */
+.user-p {
+    background-image: url(https://i.postimg.cc/J7FF3BP5/8.jpg);
+    background-size: cover;
+    width: 380px;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    border: 3px solid #ccffff;
+}
+
+.userinfo span :hover {
+    transform: scale(1.2);
+}
+
+/* 右侧信息区 */
+.inform {
+    margin-left: 150px;
+    background: #ffffff49;
+    height: 90%;
+    width: 80%;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+  /* 右侧信息上部 */
+.inform-on {
+    background-color: #ffffff49;
+    height: 20%;
+    width: 100%;
+    border-radius: 15px;
+    font-family: "宋体";
+    font-size: 2em;
+    text-align: center;
+    margin: 20 auto 0 auto;
+}
+
+.inform-on span {
+    padding-top: 10px;
+    justify-items: center;
+}
+/* 右侧信息下部 */
+.inform-dn {
+    background-color: #ffffff49;
+    height: 90%;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+    position: relative;  /* 为轮播容器定位做准备 */
+    overflow: hidden; /* 隐藏超出部分 */
+}
+/* 轮播图区域 */
+.lunbo {
+    position: relative;
+    width: 100%;
+    height: 500px;  /* 固定高度 */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    background: #0f0f1a;
+}
+  /* 图片整体区域 */
+.slides {
+    display: flex;
+    height: 100%;
+    max-height: 100%;
+    transition: transform 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+   /* 图片区域 */
+.slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: block;
+}
+   /* 左右控制区域 */
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    
+}
+
+.prev,
+.next {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+   /* 底部顺序区域 */
+.dots {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #ff7bac;
+    transform: scale(1.2);
+}
+
+@media (max-width: 850px) {
+    .lunbo {
+        height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .lunbo {
+        height: 280px;
+    }
+
+    .prev,
+    .next {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+} 
+
+.left {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.right {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+  /* 交互优化 */
+.tx:hover {
+    transform: scale(1.2);
+}
+/* 底部整体区域 */
+.userfoot {
+    font-family: "宋体";
+    grid-column: 1 / -1;
+    width: calc(270px + (100% - 270px - 30px));
+    min-height: 30px;
+    background: #ffffff49;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: auto;
+    text-align: center;
+    color: #000;
+}
+
+.userfoot a {
+    color: #000;
+}
+
+/* wenzi类样式 */
+.wenzi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* 可根据实际需要调整高度 */
+}
+
+.wenzi span {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+/* 响应式文本 */
+@media (min-width: 768px) {
+    .nav:hover+.neiron {
+        margin-left: 100px;
+    }
+
+    .hbox {
+        width: 70%;
+        margin: 20px auto;
+    }
+}

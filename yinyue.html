@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hutao.love</title>
+    <link rel="stylesheet" href="iconfont.css">
+    <link rel="stylesheet" href="zhuye.css">
+    <link rel="icon" type="imge/x-icon" href="https://i.postimg.cc/RFZZ6Wpz/h-3.png">
+    <script src="snowflake.js"></script>
+</head>
+<body>
+    <div class="zhenti">
+        <!-- 导航 -->
+        <nav class="nav">
+            <a href="shouye .html" class="nbox-1">
+                <i class="iconfont icon-helanzhu"></i>
+            </a>
+            <a href="zhuye.html" class="nbox">
+                <i class="iconfont icon-chaiquan"></i>
+                <span>主页</span>
+            </a>
+            <a href="youxi.html" class="nbox">
+                <i class="iconfont icon-sanhuamao"></i>
+                <span>游戏</span>
+            </a>
+            <a href="donman.html" class="nbox">
+                <i class="iconfont icon-baimao"></i>
+                <span>动漫</span>
+            </a>
+            <a href="yinyue.html" class="nbox">
+                <i class="iconfont icon-jumao"></i>
+                <span>音乐</span>
+            </a>
+            <a href="tuji.html" class="nbox">
+                <i class="iconfont icon-gengduomengchong"></i>
+                <span>图集</span>
+            </a>>
+        </nav>
+
+        <!-- 主要内容 -->
+        <main class="neiron">
+            <div class="userbox">
+                <div class="main-content">
+                  <!-- <div class="user">
+                    <div>
+                        <div class="tx"><img src="" alt="" title="用户头像"></div>
+                        <div>
+                            <h1>望月舒<br>
+                                <span><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今日心情：</i>😒</span></h1>
+                            <h4>向于挽舟，于舟的眼里都是向挽</h4>
+                        </div>
+                    </div>
+                    <div class="userinfo">
+                        
+                    </div>
+                  </div> -->
+                <!-- 右侧信息区 -->
+                   <!-- <div class="inform">
+                  </div> -->
+                  <div class="userfoot">
+                     &nbsp;&nbsp;&nbsp;Powered by <a href="https://github.com/qitinyu?tab=stars" 
+                     target="_blank">©wangyueshu.love  </a> <br>
+                     版权所有：©望月舒&nbsp;友情联系：484894496@qq.com
+                     <audio src="胡桃.mp3 " ></audio>
+                  </div>
+                </div>
+            </div>   
+            </div>
+        <!-- 音乐播放器 -->
+        <audio controls autoplay style="position: fixed; bottom:10px; right:20px; width:200px;">
+            <source src="胡桃.mp3" type="audio/mpeg">
+        </audio>
+    <!-- 动态效果 -->
+    <script>
+        // 简单的导航交互
+        document.querySelectorAll('.nbox').forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                link.style.transform = 'scale(1.05)';
+            });
+            link.addEventListener('mouseleave', () => {
+                link.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+    <script>
+        createSnow('', 200);
+    </script>
+</body>
+
+</html>

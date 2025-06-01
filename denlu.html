@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hutao.love</title>
+    <link rel="stylesheet" href="iconfont.css">
+    <link rel="icon" type="imge/x-icon" href="https://i.postimg.cc/RFZZ6Wpz/h-3.png">
+    <script src="snowflake.js"></script>
+    <style>
+        * {
+            font-family: "宋体";
+        }
+
+        .neiron {
+            flex-grow: 1;
+            margin-left: 50px;
+            height: 100vh;
+            overflow-y: auto;
+
+        }
+
+        .box {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .box-2 {
+            display: flex;
+            width: 90%;
+            height: 85%;
+            margin: auto;
+            /* backdrop-filter: brightness(109%); */
+            background-color: rgba(255, 255, 255, 0.21);
+            border-radius: 8px
+        }
+
+        .box-2 .wenzi {
+            display: flex;
+            width: 50%;
+            height: 100%;
+            margin: auto;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wenzi span {
+            font-size: 2.5em;
+            font-weight: 900;
+            font-family: "宋体";
+        }
+
+        .box-2 .zhuce {
+            width: 50%;
+            height: 100%;
+            border-left: 2px solid #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: "宋体";
+        }
+
+        .zhuce>input:not(#zhuce-2) {
+            text-align: center;
+            width: 300px;
+            height: 50px;
+            border-radius: 40px;
+            justify-content: center;
+            background-color: #ffffff49;
+            margin-top: 20px;
+            font-size: 15px;
+            border: 1px solid pink;
+        }
+
+        .sub input {
+            width: 300px;
+            height: 50px;
+            margin-top: 20px;
+            border-radius: 20px;
+            background-color: #ffffff49;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: ease;
+            font-size: 15px;
+            border: 1px pink solid;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .sub input:hover {
+            background-color: pink;
+        }
+
+        .sub input:active {
+            color: #000;
+            transform: scale(0.9);
+        }
+
+        .zhuce>#log:focus {
+            background-color: #FFE4E1;
+            border: 1px pink solid;
+            transform: 2s;
+        }
+
+        #zhuce-1 {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        #zhuce-1>p {
+            letter-spacing: 1px;
+            font-size: 14px;
+            margin-left: 20px;
+        }
+
+        #zhuce-1>p>a {
+            color: rgb(151, 178, 229);
+        }
+
+        .zhuce>#submit:active {
+            background-color: pink;
+        }
+
+        .zhuce>input>.checkbox {
+            width: 10px;
+            height: 10px;
+        }
+
+        .box {
+            background-image: url(https://i.postimg.cc/3J16VbBY/55.jpg);
+            background-size: cover;
+        }
+
+        #zhuce-3 {
+            display: flex;
+            justify-content: center;
+            height: 70px;
+            width: 250px;
+            margin-top: 30px;
+        }
+
+        .dl {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        .dl:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        #dl-1 {
+            background-image: url(https://i.postimg.cc/v8WCLmx1/mys.jpg);
+            margin-left: 15px;
+        }
+
+        #dl-2 {
+            background-image: url(https://i.postimg.cc/zX86d1Tx/gtb.jpg);
+            margin-left: 25px;
+            background-size: cover;
+        }
+
+        #dl-3 {
+            background-image: url(https://i.postimg.cc/J0WvVfv4/QQ.jpg);
+            margin-left: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box-2">
+            <div class="wenzi">
+                <span>剑挽流云驻 <br>马踏落花归<br>
+江湖久阔幸相逢<br> 且共金樽醉斜晖</span>
+            </div>
+            <div class="zhuce">
+                <h1>LOG IN|登录</h1>
+                <input id="log" type="text" name="username" placeholder="请输入用户名">
+                <input id="log" type="password" name="password" placeholder="请输入密码">
+                <div id="denlu" class="sub"><a href="zhuye.html">
+                        <input type="submit" name="submit" value="登录 "></a>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            // 获取立即注册按钮
+                            var registerBtn = document.getElementById('denlu');
+                            // 为按钮添加点击事件监听器
+                            denlu.addEventListener('click', function () {
+                                // 弹出注册成功的提示
+                                alert('欢迎来到祁听雨的网站');
+                                // 跳转到登录页面
+                                window.location.href = 'zhenhe.html'; // 替换为你的登录页面路径
+                            });
+                        });
+                    </script>
+                </div>
+                <div id="zhuce-1">
+                    <input id="zhuce-2" class="checkbox" type="checkbox" value="记住我">记住我
+                    <p>没有账号？<a href="zhuce.html">去注册!</a></p>
+                </div>
+                <div id="zhuce-3">
+                    <a href="https://www.miyoushe.com/ys/" target="_blank">
+                        <div id="dl-1" class="dl"></div>
+                    </a>
+                    <a href="https://github.com/" target="_blank"></a>
+                    <div id="dl-2" class="dl"></div>
+                    <a href="https://im.qq.com/index/" target="_blank">
+                        <div id="dl-3" class="dl"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    createSnow('', 200);
+</script>
+
+</html>

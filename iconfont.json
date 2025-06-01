@@ -1,0 +1,65 @@
+{
+  "id": "4876909",
+  "name": "导航2",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "42905918",
+      "name": "更多萌宠",
+      "font_class": "gengduomengchong",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "42905920",
+      "name": "柴犬",
+      "font_class": "chaiquan",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "42905927",
+      "name": "荷兰猪",
+      "font_class": "helanzhu",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "42905928",
+      "name": "可达鸭",
+      "font_class": "kedaya",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "42905929",
+      "name": "橘猫",
+      "font_class": "jumao",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "42905937",
+      "name": "羊",
+      "font_class": "yang",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "43415539",
+      "name": "白猫",
+      "font_class": "baimao",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "43415566",
+      "name": "三花猫",
+      "font_class": "sanhuamao",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    }
+  ]
+}

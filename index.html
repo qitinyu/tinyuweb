@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hutao.love</title>
+    <link rel="stylesheet" href="zhuye.css">
+    <link rel="icon" type="imge/x-icon" href="https://i.postimg.cc/RFZZ6Wpz/h-3.png">
+    <script src="snowflake.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("https://i.postimg.cc/3J16VbBY/55.jpg") ;
+            background-size: cover;
+            position: relative;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            z-index: 1;
+        }
+         .tp-bk {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+        }
+
+         .tp {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-image: url(https://i.postimg.cc/J7FF3BP5/8.jpg);
+            background-size: cover;
+            margin: 0 auto;
+            overflow: hidden;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            z-index: 2; /* 确保头像在旋转边框上方 */
+         }
+        .tp-border {
+            position:absolute;
+            top: -5px;
+            left: -5px;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            z-index: 1;
+            overflow: hidden;
+        }
+       
+        
+        .tp-border::before {
+            content: '';
+            position: absolute;
+            width: 205%;
+            height: 205%;
+            background: conic-gradient(
+                transparent, transparent, transparent, transparent,
+                #e0f0e9,/* 蓝色 */
+                #cca4e3, /* 黄色 */
+                #e0c3fc, /* 绿色 */
+                #f173ac
+            );
+            top: -50%;
+            left: -50%;
+            animation: rotate 3s linear infinite;
+            z-index: 2;
+        }
+        
+        .tp-border::after {
+            content: '';
+            position: absolute;
+            inset: 5px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 50%;
+            z-index: 2;
+        }
+         .tp:hover {
+            transform: scale(1.2);
+            transition: transform 0.3s ease;
+            border: 5px solid pink ;
+            background-image:url("https://i.postimg.cc/1t4BGFW3/ht.gif");
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+
+        .p1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: "FZShuTi";
+        }
+
+        .p2 {
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family:"kaiti"
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* 控制两个链接之间的间距 */
+            margin-top: 10px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 12px 24px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            font-family: "宋体";
+        }
+
+        .links a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border: 3px solid pink;
+            transform: translateY(-2px);
+        }
+        
+    </style>
+</head>
+<body>
+        <div class="content">
+        <div class="tp-bk">
+            <div class="tp-border"></div>
+            <div class="tp"></div>
+        </div>
+        <p class="p1">Welcome to Wangyue Shu's Home</p>
+        <p class="p2">欢迎来到望月舒的小窝</p>
+        <div class="links">
+            <a href="zhuye.html">只是看看</a>
+            <a href="denlu.html">我要入股</a>
+        </div>
+    </div>
+    <!-- 音乐播放器 -->
+        <audio controls autoplay style="position: fixed; bottom:10px; right:20px; width:200px;">
+            <source src="胡桃.mp3" type="audio/mpeg">
+        </audio>
+</body>
+</html>
